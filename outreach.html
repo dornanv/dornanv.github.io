@@ -4,6 +4,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 
+  /* The grid: Three equal columns that floats next to each other */
+ .column {
+   float: left;
+   width: 33.33%;
+   padding: 50px;
+   text-align: center;
+   font-size: 25px;
+   cursor: pointer;
+   color: white;
+ }
+
+ .containerTab {
+   padding: 20px;
+   color: white;
+ }
+
+ /* Clear floats after the columns */
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+ /* Closable button inside the image */
+ .closebtn {
+   float: right;
+   color: white;
+   font-size: 35px;
+   cursor: pointer;
+ }
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   width:500px;
@@ -130,5 +161,16 @@ div.content {
  <h2>2024 Eclipse Ambassador</h2>
  <p>Prior to the April 8th, 2024 total eclipse I worked with the McMaster astronomy department for over a year to connect with the public.</p>
 </div>
+
+<script>
+  function openTab(tabName) {
+    var i, x;
+    x = document.getElementsByClassName("containerTab");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+  } 
+</script>
 
 </body>
