@@ -101,6 +101,11 @@ div.content {
   padding: 1px 16px;
 }
 
+div.collcontent {
+  padding: 1px 16px;
+  display: none;
+}
+
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
@@ -116,6 +121,25 @@ div.content {
     text-align: center;
     float: none;
   }
+}
+
+.collapsible {
+  background-color: #FDDBF0;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 690px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  float: left;
+}
+
+.active, .collapsible:hover {
+  background-color: #FBABDD;
 }
 
 </style>
@@ -201,6 +225,41 @@ div.content {
  <p style="font-family:verdana;">I have volunteered with McMaster's sidewalk astronomy program since 2019, and have served as one of it's coordinator since 2023. This program uses two 10-inch reflecting telescopes and one 8-inch refracting telescope provided by McMaster University to allow members of the public to experience night sky viewing, free of barriers. I coordinate a team of astronomy graduate students to host roughly five viewing events per year, focussing on viewing the moon, planets, and star clusters. My job includes advertising our events and ensuring our graduate student volunteers are properly trained to communicate with members of the public about our viewing targets.</p>
 </div>
 
+<div class="content">
+<p style="font-family:verdana;">I have also done a few media appearances and interviews related to my outreach work. You can see these below, in addition to recordings of some of my public lectures. If you would like to contact me to request a media appearance or lecture, please email me!</p>
+<button type="button" class="collapsible">Media Appearances</button>
+<div class="collcontent">
+<ul style="font-family:verdana;">
+  <li><a href="https://dailynews.mcmaster.ca/articles/phd-students-planetarium-roadshow-gives-kids-a-sneak-peek-at-the-total-eclipse/">McMaster Daily News portable planetarium spotlight, March 20th, 2024.</a></li>
+ <li><a href="https://www.ctvnews.ca/video/c2899441--it-s-moving-really-quickly---astronomer?playlistId=1.6808417">CTV News eclipse interview, April 8th, 2024.</a></li>
+ <li><a href="https://dailynews.mcmaster.ca/articles/veronika-dornan-astronomer-in-residence-at-killarney/">McMaster Daily News Killarney spotlight, July 16th, 2024.</a></li>
+</ul>
+</div>
+<button type="button" class="collapsible">Public Lectures</button>
+<div class="collcontent">
+  <ul style="font-family:verdana;">
+   <li><a href="https://mcmasteru365-my.sharepoint.com/:v:/g/personal/dornanv_mcmaster_ca/EWM8h080cXRKqtQiuBpU3cABDPlMHWi085ZDDIVXpBxGjA?referrer=Outlook.Web&referrerScenario=email-linkwithembed">McMaster public eclipse lecture, March 26th, 2024.</a></li>
+   <li><a href="https://www.youtube.com/watch?v=I2RnBFckzlA&t=2242s">Allan I. Carswell Observatory solar cycle public lecture, May 31st, 2024.</a></li>
+  </ul>
+</div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 
 <script>
   function openTab(tabName) {
