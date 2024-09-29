@@ -6,7 +6,7 @@
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  width:500px;
+  width:30%;
   float:right;
 }
 
@@ -19,12 +19,13 @@
   display:inline-block;
   text-align: center;
   border: 3px solid #FDDBF0;
+  font-size: 1vw;
 }
 
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 10%;
   background-color: #E0DDDF;
   position: fixed;
   height: 100%;
@@ -37,6 +38,7 @@
   padding: 16px;
   text-decoration: none;
   font-family: verdana;
+  font-size: 1vw;
 }
 
 .sidebar a.active {
@@ -51,11 +53,13 @@
 }
 
 div.content {
-  margin-left: 200px;
-  margin-right: 500px;
+  margin-left: 10%;
+  margin-right: 30%;
   padding: 1px 16px;
   height: 1000px;
+  font-size: 1vw;
 }
+
 
 @media screen and (max-width: 700px) {
   .sidebar {
@@ -87,7 +91,7 @@ div.content {
 </div>
 
 <div class="card">
-  <img src="3quarter.JPG" alt="Veronika" style="float:right;width:500px;height:500px;">
+  <img src="3quarter.JPG" alt="Veronika" style="float:right;width:100%;height:auto;">
   <div class="container">
     <h3 style="font-family:verdana;">Veronika Dornan</h3>
     <h3 style="font-family:verdana;">dornanv@mcmaster.ca</h3>
@@ -98,7 +102,7 @@ div.content {
 <div class="content">
 <title>Veronika's Website</title>
 <h1 style="font-family:verdana;">Curriculum Vitae</h1>
-<p style="font-family:verdana;">... Coming soon!</p>
-
+<embed class="pdf" src="dornan_CV.pdf" width=100% height=72%>
 </div>
+
 </body>
