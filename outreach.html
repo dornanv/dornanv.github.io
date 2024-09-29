@@ -7,30 +7,29 @@
   /* The grid: Three equal columns that floats next to each other */
  .column {
    float: left;
-   width: 225px;
+   width: 32%;
    padding-top: 10px;
    padding-bottom: 10px;
-   padding-left: 2px;
-   padding-right: 2px;
    text-align: center;
-   font-size: 20px;
+   font-size: 1.4vw;
    font-family:verdana;
    cursor: pointer;
    color: black;
-   margin: 5px;
+   margin: 0.5%;
  }
 
  .row {
-   margin-left: 200px;
-   margin-right: 500px;
+   width: 100%;
  }
 
  .containerTab {
-   padding: 10px;
    color: black;
-   margin-left: 205px;
-   margin-right: 512px;
+   padding:1%;
+   width: 96.1%;
    margin-top: 0px;
+   font-size: 1vw;
+   margin-left: 0.5%;
+   margin-right: 0.5%;
  }
 
  /* Clear floats after the columns */
@@ -47,29 +46,31 @@
    font-size: 35px;
    font-family:verdana;
    cursor: pointer;
+   font-size: 2vw;
  }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  width:500px;
-  float:right;
-}
+ .card {
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   width: 30%;
+   float:right;
+ }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+ .card:hover {
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ }
 
-.container {
-  padding: 1% 25.5%;
-  display:inline-block;
-  text-align: center;
-  border: 3px solid #FDDBF0;
-}
+ .container {
+   padding: 1% 25.5%;
+   display:inline-block;
+   text-align: center;
+   border: 3px solid #FDDBF0;
+   font-size: 1vw;
+ }
 
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 10%;
   background-color: #E0DDDF;
   position: fixed;
   height: 100%;
@@ -82,6 +83,7 @@
   padding: 16px;
   text-decoration: none;
   font-family: verdana;
+  font-size: 1vw;
 }
 
 .sidebar a.active {
@@ -96,14 +98,18 @@
 }
 
 div.content {
-  margin-left: 200px;
-  margin-right: 500px;
+  margin-left: 10%;
+  margin-right: 31%;
   padding: 1px 16px;
+  font-size: 1vw;
+  height:1000px;
 }
 
 div.collcontent {
   padding: 1px 16px;
   display: none;
+  width: 70%;
+  font-size: 1vw;
 }
 
 @media screen and (max-width: 700px) {
@@ -128,13 +134,12 @@ div.collcontent {
   color: black;
   cursor: pointer;
   padding: 18px;
-  width: 690px;
+  width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 20px;
-  margin-top: 0px;
-  margin-bottom: 2px;
+  font-size: 1.4vw;
+  margin-bottom: 1%;
   float: left;
 }
 
@@ -155,7 +160,7 @@ div.collcontent {
 </div>
 
 <div class="card">
-  <img src="3quarter.JPG" alt="Veronika" style="float:right;width:500px;height:500px;">
+  <img src="3quarter.JPG" alt="Veronika" style="float:right;width:100%;height:auto;">
   <div class="container">
     <h3 style="font-family:verdana;">Veronika Dornan</h3>
     <h3 style="font-family:verdana;">dornanv@mcmaster.ca</h3>
@@ -168,7 +173,7 @@ div.collcontent {
 <h1 style="font-family:verdana;">Outreach Work</h1>
 <p style="font-family:verdana;">I am strongly committed to astronomy outreach, communication, and education. I believe that excellence in research is not worthwhile if one is unable to communicate that research effectively to the public, in an engaging way. Simply put: as researchers we are not working just for ourselves, we are working for the benefit of all, and so we must prioritize being able to share what we discover with everyone.</p>
 <p style="font-family:verdana;">As a graduate student I have honed my science communication skills through a variety of projects, which you can check out below.</p>
-</div>
+
 
 <!-- The grid: three columns -->
 <div class="row">
@@ -184,6 +189,7 @@ div.collcontent {
 </div>
 
 <!-- The expanding grid (hidden by default) -->
+
 <div id="b1" class="containerTab" style="display:none;background: #FDDBF0">
  <!-- If you want the ability to close the container, add a close button -->
  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
@@ -191,6 +197,7 @@ div.collcontent {
  <p style="font-family:verdana;">I have worked as a presenter at the W.J. McCallion Planetarium at McMaster University since 2019. I have given live shows to members of the public on a variety of topic for all ages. I have also developed three original shows on topics inclusing women's contributions to astronomy, the Voyager missions, and ancient astronomy. You can see descriptions for these, and all other shows I have given, <a href="https://planetarium.physics.mcmaster.ca/available-shows/">here.</a></p>
  <p style="font-family:verdana;">I have also been one of the first presenters for McMaster's portable planetarium program since 2022. One of the focuses of this program has been to bring planetarium shows to traditionally underserved groups, with an emphasis on local indigenous communities. Through this I have been trained to present our indigenous astronomy show, The Celestial Bear, which was developed with members of The Six Nations of The Grand River.</p>
 </div>
+
 
 <div id="b2" class="containerTab" style="display:none;background: #FDDBF0">
  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
@@ -226,7 +233,6 @@ div.collcontent {
  <p style="font-family:verdana;">I have volunteered with McMaster's sidewalk astronomy program since 2019, and have served as one of it's coordinator since 2023. This program uses two 10-inch reflecting telescopes and one 8-inch refracting telescope provided by McMaster University to allow members of the public to experience night sky viewing, free of barriers. I coordinate a team of astronomy graduate students to host roughly five viewing events per year, focussing on viewing the moon, planets, and star clusters. My job includes advertising our events and ensuring our graduate student volunteers are properly trained to communicate with members of the public about our viewing targets.</p>
 </div>
 
-<div class="content">
 <p style="font-family:verdana;">I have also done a few media appearances and interviews related to my outreach work. You can see these below, in addition to recordings of some of my public lectures. If you would like to request a media appearance or lecture, please email me!</p>
 <button type="button" class="collapsible">Media Appearances</button>
 <div class="collcontent">
